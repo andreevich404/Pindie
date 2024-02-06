@@ -1,7 +1,21 @@
 {
-  "name": "my-app",
+  "name": "pindie",
   "version": "0.1.0",
+  "description": "Pindie site for games",
+  "author": "Ivan Andreevich <ivantolkachevit549@gmail.com> (https://github.com/andreevich404)",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreevich404/Pindie"
+  },
+  "bugs": {
+    "url": "https://github.com/andreevich404/Pindie/issues",
+    "email": "ivantolkachevit549@gmail.com"
+  },
+  "homepage": "https://github.com/andreevich404/Pindie",
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
