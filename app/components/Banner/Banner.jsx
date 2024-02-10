@@ -3,22 +3,22 @@ import Image from 'next/image';
 
 export const Banner = () => {
 	return (
-		<section className={Styles['banner']}>
-			<div className={Styles['banner__description']}>
-				<h1 className={Styles['banner__title']}>Портал инди-игр от&nbsp;студентов Яндекс Практикума</h1>
-				<div className={Styles['banner__text-block']}>
-					<p className={Styles['banner__text']}>
+		<section className={Styles.banner}>
+			<div className={Styles.bannerDescription}>
+				<h1 className={Styles.bannerTitle}>Портал инди-игр от&nbsp;студентов Яндекс Практикума</h1>
+				<div className={Styles.bannerTextBlock}>
+					<p className={Styles.bannerText}>
               Студенты курсов разрабатывают свои игры на Unity, здесь мы их
               публикуем. Вы можете играть прямо на сайте. А если у вас есть
               аккаунт пользователя — получаете возможность голосовать за игры.
 					</p>
 				</div>
-				<a href='#popular' className={`${Styles['button']} ${Styles['banner__link']}`}>Смотреть игры</a>
+				<a href='#popular' className={`${Styles.button} ${Styles.bannerLink}`}>Смотреть игры</a>
 			</div>
 			<Image
 				src="/images/banner-illustration.jpg"
 				alt="Рука, утопленная в желтом фоне"
-				className={Styles['banner__image']}
+				className={Styles.bannerImage}
 				layout="responsive"
 				width={100}
 				height={100}

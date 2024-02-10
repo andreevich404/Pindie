@@ -16,7 +16,7 @@
   align-self: center;
 }
 
-.logo__image {
+.logoImage {
   width: 100%;
 }
 
@@ -28,19 +28,19 @@
   justify-self: end;
 }
 
-.menu__list {
+.menuList {
   display: grid;
   gap: 4px;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   width: 100%;
 }
 
-.menu__item {
+.menuItem {
   display: flex;
   width: 100%;
 }
 
-.menu__link {
+.menuLink {
   font-family: "Rubic One", sans-serif;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@
     4px -4px 0 black;
 }
 
-.menu__link:hover {
+.menuLink:hover {
   background-color: #ffff00;
 }
 
@@ -62,7 +62,7 @@
   display: flex;
 }
 
-.auth__button {
+.authButton {
   font-size: 30px;
   font-family: "Rubic One", sans-serif;
   background-color: transparent;
@@ -75,7 +75,7 @@
   transition: color 0.3s ease-in-out;
 }
 
-.auth__button:hover {
+.authButton:hover {
   color: #ffff00;
 }
 
@@ -86,11 +86,11 @@
     padding: 10px 0px;
   }
 
-  .menu__link {
+  .menuLink {
     font-size: 20px;
   }
 
-  .auth__button {
+  .authButton {
     font-size: 20px;
   }
 }
@@ -100,7 +100,7 @@
     width: 100%;
   }
 
-  .menu__list {
+  .menuList {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
@@ -120,7 +120,7 @@
     flex-direction: column;
   }
 
-  .auth__button {
+  .authButton {
     width: 100%;
     padding: 18px 20px 10px;
   }

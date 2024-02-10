@@ -1,0 +1,90 @@
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: #ffff00;
+  transform: translate(-8px, -8px);
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 375 / 250;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid black;
+}
+
+.cardContentBlock {
+  padding: 16px 16px 35px;
+  border: 4px solid black;
+  flex-grow: 1;
+  display: grid;
+}
+
+.cardTitle {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.cardDescription {
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.cardInfoContainer {
+  align-self: end;
+}
+
+.cardAuthor {
+  font-size: 20px;
+}
+
+.cardAuthor .cardAccent {
+  font-family: "Rubic One", sans-serif;
+}
+
+.cardVotes {
+  font-size: 20px;
+}
+
+.cardVotes .cardAccent {
+  font-family: "Rubic One", sans-serif;
+  display: inline-block;
+  padding: 4px 17px 25px 4px;
+  background-color: black;
+  color: white;
+}
+
+@media (width <=1440px) {
+  .cardContentBlock {
+    padding: 16px 16px 26px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .cardDescription {
+    font-size: 16px;
+  }
+
+  .cardAuthor {
+    font-size: 16px;
+  }
+
+  .cardVotes {
+    font-size: 16px;
+  }
+
+  .cardVotes .cardAccent {
+    padding: 4px 15px 15px 4px;
+  }
+}

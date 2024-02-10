@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 export const Header = () => {
 	return (
-		<header className={Styles['header']}>
-			<a href="./index.html" className={Styles['logo']}>
+		<header className={Styles.header}>
+			<a href="./index.html" className={Styles.logo}>
 				<Image
-					className={Styles['logo__image']}
+					className={Styles.logoImage}
 					src="./images/logo.svg"
 					alt="Логотип Pindie"
 					layout="responsive"
@@ -14,41 +14,29 @@ export const Header = () => {
 					height={100}
 				/>
 			</a>
-			<nav className={Styles['menu']}>
-				<ul className={Styles['menu__list']}>
-					<li className={Styles['menu__item']}>
-						<a href="" className={Styles['menu__link']}>
-              Новинки
-						</a>
+			<nav className={Styles.menu}>
+				<ul className={Styles.menuList}>
+					<li className={Styles.menuItem}>
+						<a href="" className={Styles.menuLink}>Новинки</a>
 					</li>
-					<li className={Styles['menu__item']}>
-						<a href="" className={Styles['menu__link']}>
-              Популярные
-						</a>
+					<li className={Styles.menuItem}>
+						<a href="" className={Styles.menuLink}>Популярные</a>
 					</li>
-					<li className={Styles['menu__item']}>
-						<a href="" className={Styles['menu__link']}>
-              Шутеры
-						</a>
+					<li className={Styles.menuItem}>
+						<a href="" className={Styles.menuLink}>Шутеры</a>
 					</li>
-					<li className={Styles['menu__item']}>
-						<a href="" className={Styles['menu__link']}>
-              Ранеры
-						</a>
+					<li className={Styles.menuItem}>
+						<a href="" className={Styles.menuLink}>Ранеры</a>
 					</li>
-					<li className={Styles['menu__item']}>
-						<a href="" className={Styles['menu__link']}>
-              Пиксельные
-						</a>
+					<li className={Styles.menuItem}>
+						<a href="" className={Styles.menuLink}>Пиксельные</a>
 					</li>
-					<li className={Styles['menu__item']}>
-						<a href="" className={Styles['menu__link']}>
-              TDS
-						</a>
+					<li className={Styles.menuItem}>
+						<a href="" className={Styles.menuLink}>TDS</a>
 					</li>
 				</ul>
-				<div className={Styles['auth']}>
-					<button className={Styles['auth__button']}>Войти</button>
+				<div className={Styles.auth}>
+					<button className={Styles.authButton}>Войти</button>
 				</div>
 			</nav>
 		</header>
