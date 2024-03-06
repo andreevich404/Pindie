@@ -1,0 +1,38 @@
+.notFound {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  justify-items: start;
+  gap: 20px;
+  padding: 80px 40px 0;
+}
+
+.notFoundImage {
+  width: 50%;
+  min-width: 450px;
+  margin: 0 auto;
+  display: block;
+  align-self: end;
+}
+
+.notFoundText {
+  font-size: 48px;
+}
+
+@media (width <= 768px) {
+  .notFound {
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 20px;
+  }
+
+  .notFoundImage {
+    min-width: 300px;
+  }
+
+  .notFoundText {
+    font-size: 32px;
+    text-align: center;
+    grid-row: 1;
+  }
+}

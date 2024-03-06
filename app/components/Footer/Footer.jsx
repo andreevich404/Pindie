@@ -1,21 +1,34 @@
+'use client';
+
 import Styles from './Footer.module.css';
 
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
 export const Footer = () => {
+	const pathname = usePathname();
 	return (
 		<footer className={Styles.footer}>
-			<a href='/' className={Styles.footerLogo}>
-				<span className={Styles.footerLogoName}>pindie</span>
-				<span className={Styles.footerLogoCopy}>, XXI век</span>
-			</a>
+			{pathname === '/' ? (
+				<p className={Styles.footerLogo}>
+					<span className={Styles.footerLogoName}>pindie</span>
+					<span className={Styles.footerLogoCopy}>, XXI век</span>
+				</p>
+			) : (
+				<Link href="/" className={Styles.footerLogo}>
+					<span className={Styles.footerLogoName}>pindie</span>
+					<span className={Styles.footerLogoCopy}>, XXI век</span>
+				</Link>
+			)}
 			<ul className={Styles.socialList}>
 				<li className={Styles.socialListItem}>
-					<a href='/' className={`${Styles.button} ${Styles.socialListLink}`}>YT</a>
+					<a href="" className={`button ${Styles.socialListLink}`}>YT</a>
 				</li>
 				<li className={Styles.socialListItem}>
-					<a href='/' className={`${Styles.button} ${Styles.socialListLink}`}>ВК</a>
+					<a href="" className={`button ${Styles.socialListLink}`}>ВК</a>
 				</li>
 				<li className={Styles.socialListItem}>
-					<a href='/' className={`${Styles.button} ${Styles.socialListLink}`}>TG</a>
+					<a href="" className={`button ${Styles.socialListLink}`}>TG</a>
 				</li>
 			</ul>
 		</footer>

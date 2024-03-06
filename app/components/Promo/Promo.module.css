@@ -27,18 +27,9 @@
   margin-left: 108px;
 }
 
-.button {
-  font-family: "Rubic One", sans-serif;
-  display: block;
-  padding: 18px 35px;
-  border: 4px solid black;
-  background-color: transparent;
-  text-transform: uppercase;
-  width: fit-content;
-  color: black;
-  font-size: 30px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  white-space: nowrap;
+.promoImage {
+  align-self: end;
+  justify-self: end;
 }
 
 .promoButton {
@@ -52,16 +43,16 @@
   color: #2400ff;
 }
 
-.promoImage {
-  align-self: end;
-  justify-self: end;
+.promoCode {
+  color: yellow;
+}
+
+.promoButton:has(.promo-code):hover {
+  background-color: transparent;
+  cursor: default;
 }
 
 @media (width <= 1440px) {
-  .button {
-    font-size: 20px;
-  }
-
   .promo {
     padding: 40px 120px;
   }
